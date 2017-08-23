@@ -7,15 +7,21 @@ security:
     client:
       clientId: foo
       clientSecret: foosecret
+#      令牌申请URL
       accessTokenUri: http://localhost:9000/authserver/oauth/token
-#      SSO跳转页面
+#      用户授权URL
       userAuthorizationUri: http://localhost:9000/authserver/oauth/authorize
+#      client-authentication-scheme: form
 #      tokenName: oauth_token
 #      authenticationScheme: query
 #      clientAuthenticationScheme: form
     resource:
+#      用户信息查询URL
       userInfoUri: http://localhost:9000/authserver/user
-
+#      单点登录重定向回来的路径
+    sso:
+      login-path: /re-login
+#      prefer-token-info: false
 
 
 
