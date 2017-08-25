@@ -17,7 +17,8 @@ security:
 #      clientAuthenticationScheme: form
     resource:
 #      用户信息查询URL
-      userInfoUri: http://localhost:9000/authserver/user
+#      userInfoUri: http://localhost:9000/authserver/user
+      token-info-uri: http://localhost:9000/authserver/oauth/check_token
 #      单点登录重定向回来的路径
     sso:
       login-path: /re-login
