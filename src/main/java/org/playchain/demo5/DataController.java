@@ -20,11 +20,8 @@ public class DataController {
         return "data";
     }
 
-
     @RequestMapping("/hello")
     public String index() {
         return "hello";
     }
-
-
 }
